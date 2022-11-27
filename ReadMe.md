@@ -1,0 +1,3 @@
+# Angular repository
+
+Hello, welcome to my Angular repository. This repository is for my projects that I made in my [angular course](https://www.udemy.com/course/curso-de-angular/) with teacher [Dener](https://www.udemy.com/course/curso-de-angular/#instructor-1). I am from brasil, so, this repo can have some brazilian portuguese but nothing to worry, just some really good practicing exemples and if you want to check my notes of the course, plese checkout my [notes repository](https://github.com/kkphoenixgx/Programming-Classes) to all the languages that I know, I use obsidian as a IDE to study and sometimes I update it, so, please, checkout. 🌟
