@@ -1,0 +1,15 @@
+<hr>
+<div *ngIf="inputValue === '' " >
+    <h2 [ngClass]="{'enable': blinkToggle, 'disable': !blinkToggle}" > Attribute Directives </h2>
+    <p [ngStyle]="{'font-size': fontSize}" > ngStyle </p>
+    <p [ngStyle]="css" > ngStyle </p>
+</div>
+
+<hr>
+
+<input [(ngModel)]="inputValue" >  {{inputValue}} <br>
+<button (click)="addItem()" >Add</button>
+
+<ul>
+    <li *ngFor="let item of list" > {{ item }}  </li>
+</ul>

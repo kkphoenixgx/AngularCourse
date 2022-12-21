@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TextingInputComponent } from './texting-input/texting-input.component';
+import { ProjectBindingComponent } from './project-binding/project-binding.component';
+import { AttributeDirectivesComponent } from './attribute-directives/attribute-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TextingInputComponent
+    ProjectBindingComponent,
+    AttributeDirectivesComponent,
   ],
   imports: [
     BrowserModule,
