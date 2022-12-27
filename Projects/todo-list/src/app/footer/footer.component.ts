@@ -1,13 +1,21 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { inputTask, makeTodo, deleteAllItens } from '../utils/todoFactoryInplementation';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss']
 })
+
 export class FooterComponent implements OnInit {
   
-  @Input() public inputTask : { text: string , index :number  }[] = []
+  public inputTask :any = null
+  
+  ngDoCheck(): void {
+    this.inputTask = inputTask
+  }
+
+  
   public inputTaskElement :HTMLInputElement | null = null
 
   ngOnInit(): void {
@@ -15,21 +23,20 @@ export class FooterComponent implements OnInit {
     this.inputTaskElement = document.querySelector('#inputTask') as HTMLInputElement | null 
     this.inputTaskElement?.addEventListener('keydown', (event)=> {
       
-      console.log(this.inputTaskElement?.value, event.key);
-      
-      if(event.key === 'Enter' && typeof this.inputTaskElement?.value != undefined ){
+      if(event.key === 'Enter' && this.inputTaskElement?.value != undefined ){
         
-        this.inputTask?.push({ 
-          text : this.inputTaskElement?.value as string,
-          index: this.inputTask.length + 1
-        })
-        console.log('whaaat', typeof this.inputTask, this.inputTask[0]);
+        if(this.inputTaskElement?.value === '') return
+        
+        makeTodo(this.inputTaskElement?.value as string)
+        this.inputTaskElement.value = ''
       };
       
     })
 
-  }
+  }  
 
-  
+  public deleteAll() :void{
+    deleteAllItens();
+  }
 
 }

@@ -5,9 +5,44 @@ section{
     text-align: center;
 }
 
-section img{
+section .bgTask{
     height: 206px;
     width: 200px;
     margin: 0 auto;
     margin-top: 25vh;
+}
+section .trashIcon{
+    height: 37px;
+    width: 14px;
+    margin-top: 3px;
+}
+
+section ul{
+    width: 67vw;
+    margin: 0 auto;
+}
+
+section .todoLi{
+    display: flex;
+    margin-top: 3vh;
+    align-items: center;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+section .todo{
+    display: flex;
+    align-items: center;
+}
+section .todo p{
+    color: #939CBD;
+    margin-left: 10px;
+    text-decoration-line: unset;
+    
+    font-size: 27px;
+}
+section .todo input{
+    width: 20px;
+    height: 16px;
+    margin-top: 3px;
 }

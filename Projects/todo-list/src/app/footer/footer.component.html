@@ -1,8 +1,8 @@
 <footer>
-    <input id="inputTask" placeholder="Type our task here...">
+    <input [ngClass]="{'marginTop': inputTask?.length === 0}" id="inputTask" maxlength="73" placeholder="Type our task here...">
 
-    <ng-template [ngIf]="inputTask.length != 0" >
-        <button>DELETAR TODOS</button>
+    <ng-template [ngIf]="inputTask?.length != 0" >
+        <button (click)="deleteAll()">DELETAR TODOS</button>
     </ng-template>
     
 </footer>

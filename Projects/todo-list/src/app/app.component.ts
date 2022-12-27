@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
     <app-header></app-header>
     <app-section></app-section>
     
-    <app-footer [inputTask] = "inputText" ></app-footer>
+    <app-footer></app-footer>
     <router-outlet></router-outlet>
   `
 })
 export class AppComponent {
-
-  public inputText : { text: string , index :number  }[]  = []
 }
