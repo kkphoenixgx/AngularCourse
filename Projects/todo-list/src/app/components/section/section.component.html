@@ -1,0 +1,34 @@
+<section>
+    
+    <div *ngIf=" checkedTodo?.length > 0 || listTodo?.length > 0 ;then list_content else standby"></div>
+    
+    <ng-template #standby>
+        <img class="bgTask" src="assets/img/bg-task.png" alt="bg-task">
+        <h3>Add some note (づ￣ 3￣)づ</h3>
+    </ng-template>
+
+    <ng-template #list_content>
+        <ul>
+            <li class="todoLi" *ngFor="let todo of listTodo; let i = index">
+                
+                <div class="todo">
+                    <input (click)="markAsDone(i, 'todo')" type="checkbox">
+                    <p id="list-{{i}}" >{{todo.text}}</p>
+                </div>
+
+                <img (click)="deleteItem(i, 'todo')" class="trashIcon" src="assets/icons/icon-trash.svg" alt="icon-trash">
+            </li>
+            <li class="checkedTodoLi" *ngFor="let todo of checkedTodo; let i = index">
+                
+                <div class="todo todoChecked">
+                    <input (click)="markAsDone(i, 'todoChecked')" type="checkbox" checked="true" >
+                    <p id="listChecked-{{i}}" >{{todo.text}}</p>
+                </div>
+
+                <img (click)="deleteItem(i, 'todoChecked')" class="trashIcon" src="assets/icons/icon-trash.svg" alt="icon-trash">
+            </li>
+
+        </ul>
+    </ng-template>
+
+</section>

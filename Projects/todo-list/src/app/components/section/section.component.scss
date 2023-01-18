@@ -22,7 +22,7 @@ section ul{
     margin: 0 auto;
 }
 
-section .todoLi{
+section .todoLi, .checkedTodoLi{
     display: flex;
     margin-top: 3vh;
     align-items: center;
@@ -45,4 +45,8 @@ section .todo input{
     width: 20px;
     height: 16px;
     margin-top: 3px;
+}
+
+section .todoChecked p{
+    text-decoration-line: line-through;
 }
