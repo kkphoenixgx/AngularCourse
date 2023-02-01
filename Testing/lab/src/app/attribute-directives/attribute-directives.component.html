@@ -7,9 +7,9 @@
 
 <hr>
 
-<input [(ngModel)]="inputValue" >  {{inputValue}} <br>
-<button (click)="addItem()" >Add</button>
+<input [(ngModel)]="inputValue" (keydown.enter)="addItem()" >  {{inputValue}} <br>
+<button (click)="addItem()">Add</button>
 
 <ul>
-    <li *ngFor="let item of list" > {{ item }}  </li>
+    <li *ngFor="let item of list" > [ {{ item.id}} ]-{{item.name}}  </li>
 </ul>

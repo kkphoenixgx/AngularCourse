@@ -1,0 +1,20 @@
+{
+  "serverResponse": [
+    {
+      "id": 1,
+      "name": "response1"
+    },
+    {
+      "id": 2,
+      "name": "response2"
+    },
+    {
+      "id": 3,
+      "name": "response3"
+    },
+    {
+      "name": "response4",
+      "id": 4
+    }
+  ]
+}
