@@ -1,0 +1,31 @@
+<header>
+  <h1>Testing Routes</h1>
+  <ul>
+
+    <li>  
+      <a routerLink="/"
+        [routerLinkActive] = "['activeRoute']"
+        [routerLinkActiveOptions]="{exact: true}" > Home
+      </a>  
+    </li>
+
+    <li>  
+      <a [routerLink]="['/about']"
+        [routerLinkActive] = "['activeRoute']" >about
+      </a>  
+    </li>
+    
+    <li>  
+      <a routerLink="/404"
+        [routerLinkActive] = "['activeRoute']" >404
+      </a> 
+    </li>
+
+    <li>  
+      <a routerLink="/about/kkphoenix"
+        [routerLinkActive] = "['activeRoute']" >kkphoenix
+      </a> 
+    </li>
+
+  </ul>
+</header>

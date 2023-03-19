@@ -1,0 +1,35 @@
+header{
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+h1{
+  position: relative;
+  margin: 0 0 6px 2vw;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+}
+a{
+  text-decoration: none;
+  color: rgb(122, 159, 159);
+  margin-left: 3vw;
+}
+
+.activeRoute{
+  color: rgb(255, 0, 0)
+}
+
+// ----------- Animations -----------
+
+a:hover{
+  color: blue;
+  transition: ease-in-out 0.50s;
+}
