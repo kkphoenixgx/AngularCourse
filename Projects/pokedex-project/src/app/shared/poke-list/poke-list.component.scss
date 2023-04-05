@@ -4,71 +4,73 @@
 $paddingDefaultSpace: rem-calc(20);
 
 :host{
-  display: flex;
-  justify-content: space-between;
-  padding: $paddingDefaultSpace 0;
-  flex-wrap: wrap;
-
-  .poke{
-    position: relative;
+  .list{
     display: flex;
-    width: calc(49% - 2.5rem ) ;
-    height: rem-calc(157 - 40);
-    border-radius: rem-calc(10);
-    padding: $paddingDefaultSpace;
-    margin-bottom: rem-calc(10);
-
-    align-items: center;
     justify-content: space-between;
-
-    background: var(--branco);
+    padding: $paddingDefaultSpace 0;
+    flex-wrap: wrap;
+  
+    .poke{
+      position: relative;
+      display: flex;
+      width: calc(49% - 2.5rem ) ;
+      height: rem-calc(157 - 40);
+      border-radius: rem-calc(10);
+      padding: $paddingDefaultSpace;
+      margin-bottom: rem-calc(10);
+  
+      align-items: center;
+      justify-content: space-between;
+  
+      background: var(--branco);
+      
+      &__status{
+        h2{
+          font-size: rem-calc(22);
+          font-style: italic;
+          font-weight: 700;
+          color: black;
+          text-transform: capitalize;
+  
+          margin-bottom: rem-calc(10);
+        }
+        
+        ul{
+          display: flex;
+          flex-direction: column;
+        }
+        
+        li, a{
+          color: black;
+        }
+        li{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: rem-calc(60);
+          
+          border-radius: rem-calc(50);
+          margin-bottom: rem-calc(5);
     
-    &__status{
-      h2{
-        font-size: rem-calc(22);
-        font-style: italic;
-        font-weight: 700;
-        color: black;
-        text-transform: capitalize;
-
-        margin-bottom: rem-calc(10);
+          background-color: var(--cinza);
+          font-size: rem-calc(10);
+        }
       }
-      
-      ul{
-        display: flex;
-        flex-direction: column;
-      }
-      
-      li, a{
-        color: black;
-      }
-      li{
-        display: flex;
+      &__image{
+        height: rem-calc(90);
+        width: rem-calc(110);
+        display: flex;  
+        
         justify-content: center;
         align-items: center;
-        width: rem-calc(60);
         
-        border-radius: rem-calc(50);
-        margin-bottom: rem-calc(5);
-  
-        background-color: var(--cinza);
-        font-size: rem-calc(10);
-      }
-    }
-    &__image{
-      height: rem-calc(90);
-      width: rem-calc(110);
-      display: flex;  
-      
-      justify-content: center;
-      align-items: center;
-      
-      right: $paddingDefaultSpace;
-      bottom: $paddingDefaultSpace;
-      
-      .poke-img{
-        width: rem-calc(80);
-        position: absolute;
+        right: $paddingDefaultSpace;
+        bottom: $paddingDefaultSpace;
+        
+        .poke-img{
+          width: rem-calc(60);
+          position: absolute;
+        }
       }
     }
   }

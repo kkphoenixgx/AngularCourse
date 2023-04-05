@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "One Dark Pro Mix",
+		"cSpell.words": [
+			"pokemons"
+		],
+	}
+}
