@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(~/src/assets/Roboto-Font//Roboto-Medium.ttf);
+  font-display: swap;
+}
+
+*{
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body{
+  height: 100vh;
+  background: url(~/src/assets/Bg.png), no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

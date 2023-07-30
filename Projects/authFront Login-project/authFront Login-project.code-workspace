@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"workbench.colorTheme": "Tinacious Design (High Contrast)",
+	},
+	"extensions": {
+    "recommendations": [
+			"aaron-bond.better-comments",
+			"alefragnani.Bookmarks",
+			"christian-kohler.path-intellisense",
+			"dzhavat.bracket-pair-toggler",
+			"PKief.material-icon-theme",
+			"DavidAnson.vscode-markdownlint",
+			
+			"tinaciousdesign.theme-tinaciousdesign", // Theme
+
+			"formulahendry.auto-close-tag",
+			"formulahendry.auto-rename-tag",
+
+			"Angular.ng-template",
+			"dbaeumer.vscode-eslint",
+			"moppitz.vscode-extension-auto-import",
+			
+			"syler.sass-indented",
+			"sibiraj-s.vscode-scss-formatter",
+			"mrmlnc.vscode-scss",
+    ]
+  }
+}
